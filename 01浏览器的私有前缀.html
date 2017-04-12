@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浏览器的私有前缀</title>
+	<style>
+		.box{
+			width:400px;
+			height: 400px;
+			border:10px solid orange;
+			padding:10px;
+
+			-webkit-border-radius:220px;   /*chrome和safari较低版本浏览器的写法*/
+			-moz-border-radius:220px;   /*firefox较低版本浏览器的写法*/
+			-ms-border-radius:220px;    /*IE较低版本浏览器的写法*/
+			-o-border-radius:220px;    /*Opera欧鹏较低版本浏览器的写法*/
+			-khtml-border-radius:220px;  /*linux自带浏览器的私有前缀*/
+			border-radius:220px;    /*被W3C采纳后的写法*/
+
+			laohan:haha;
+			mumulaoshi:xixi;
+		}
+		
+	</style>
+</head>
+<body>
+	<img src="images/01.jpg" alt="" class="box">
+</body>
+</html>
